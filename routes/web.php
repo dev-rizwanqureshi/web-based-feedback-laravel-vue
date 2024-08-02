@@ -12,8 +12,10 @@ Route::get('/register', [\App\Http\Controllers\InertiaPageController::class, 're
 
 
 
-Route::group(['middleware'=>'auth:sanctum'], function () {
+//Route::group(['middleware'=>'auth:sanctum'], function () {
     Route::get('/', [\App\Http\Controllers\InertiaPageController::class, 'index']);
     Route::get('/index', [\App\Http\Controllers\InertiaPageController::class, 'index']);
     Route::get('/home', [\App\Http\Controllers\InertiaPageController::class, 'index']);
-});
+    Route::get('/feedback', [\App\Http\Controllers\InertiaPageController::class, 'feedback']);
+    Route::get('/feedback/{id}', [\App\Http\Controllers\InertiaPageController::class, 'feedbackView']);
+//});

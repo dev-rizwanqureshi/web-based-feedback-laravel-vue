@@ -21,5 +21,14 @@ class InertiaPageController extends Controller
     {
         return Inertia::render('index');
     }
+    public function feedback()
+    {
+        return Inertia::render('feedback');
+    }
+
+    public function feedbackView($id)
+    {
+        return Inertia::render('feedbackView');
+    }
 
 }

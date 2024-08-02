@@ -1,11 +1,14 @@
 <script setup>
 
+import Nav from "../Components/Nav.vue";
 </script>
 
 <template>
 
-    <div>
-        <h2>Welcome</h2>
+    <Nav />
+
+    <div class="container py-5">
+        <h2>Home</h2>
     </div>
 
 </template>

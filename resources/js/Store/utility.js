@@ -72,5 +72,9 @@ export const utilityPinia = defineStore({
             console.log("onPageVisitsLink===",url);
             router.visit(url,{ method: 'get' });
         },
+        onClickAddFeedback() {
+            console.log('onClickAddFeedback');
+            this.showHideModal('addFeedBack')
+        },
     },
 })
